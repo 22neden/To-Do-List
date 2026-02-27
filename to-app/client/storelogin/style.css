@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #0047ab; /* Основний синій колір */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Декоративні фігури на фоні */
+.shape {
+    position: absolute;
+    filter: blur(40px);
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    background: #007bff;
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+}
+
+.shape-2 {
+    width: 400px;
+    height: 400px;
+    background: #003380;
+    border-radius: 50%;
+    bottom: -100px;
+    right: -50px;
+}
+
+.shape-3 {
+    width: 200px;
+    height: 200px;
+    background: #1e90ff;
+    border-radius: 40% 60% 70% 30%;
+    top: 50%;
+    left: 10%;
+}
+
+/* Картка з ефектом скла */
+.login-card {
+    background: rgba(255, 255, 255, 0.08); /* Напівпрозорий білий */
+    backdrop-filter: blur(15px); /* Ефект розмиття */
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.logo-text {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+/* Форми */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    color: #e0e0e0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    background: white;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.forgot-link {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.forgot-link a {
+    color: #e0e0e0;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+/* Кнопка */
+.btn-signin {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #001f3f; /* Темно-синій */
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-signin:hover {
+    background: #002d5c;
+}
+
+/* Розділювач */
+.divider {
+    margin: 25px 0;
+    position: relative;
+    font-size: 0.75rem;
+    color: #d1d1d1;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.divider::before { left: 0; }
+.divider::after { right: 0; }
+
+/* Соцмережі */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-btn {
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+}
+
+.social-btn img {
+    height: 20px;
+}
+
+/* Футер */
+.footer-text {
+    font-size: 0.8rem;
+    color: #e0e0e0;
+}
+
+.footer-text a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
